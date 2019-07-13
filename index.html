@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+            </style>
+    <title>JL Diseño</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- ÁREA DE ESTILOS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+    <header>
+        <nav>
+            <figure>
+                <img src="images/logo_jl_SVG.svg" height="80px" class="center" alt="Logo JL">
+            </figure>
+
+<!-- NAVBAR -->
+            <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                              <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Sobre mí</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Portafolio</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Servicios</a>
+                                </li>
+                              </ul>
+                                    </nav>
+            </div>
+        </nav>            </div>
+    </header>
+
+<main>
+    <section>
+            <div class="container">
+                    <div class="box1">
+                        <img src="images/foto_jl_circ_01.png" width="120px" height="120px" alt="foto JL">
+                        <h5><i>Experiencia</i></h5>
+                        <h6>
+                                <li>Hola! Soy José Luis Alvarado, Diseñador integral con más de 8 años de experiencia, egresado de la UAM Cuajimalpa, con estudios parciales en psicología y actual estudiante en Ironhack; he estado en agencias gráficas, digitales, de eventos, en áreas de diseño gráfico, industrial y mercadotecnia. He trabajado con clientes como Banxico, Cambridge, Merck, Papalote Museo de niño, Liverpool, entre muchos otros.</li>
+                                </h6>
+                    </div>
+                    
+                    <div class="box2">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <h5><i>Portafolio</i></h5>
+<!-- CARRUSEL -->  
+                                <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="images/port01.jpg" height="auto" width="auto" class="d-block w-100" alt="Render Evento 1">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="images/port02.png" height="auto" width="auto" class="d-block w-100" alt="Render Evento 2">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="images/port04.png" height="auto" width="auto" class="d-block w-100" alt="Render Evento 3">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Siguiente</span>
+                                    </a>
+                            </div>
+                    </div>
+
+
+
+<!-- SSERVICIOS -->
+                    <div class="box">
+                            <div style="text-align:center">
+                                    <h5><i>Servicios</i></h5>
+                                    <h6>¿Qué hace un diseñador integral?</h6>
+                                  </div>
+                                  
+<!-- COLUMNAS EXPANDIBLES-->
+                                  <div class="row">
+                                    <div class="columnagrid" onclick="openTab('b1');" style="background:rgb(8, 219, 219);">
+                                        <h6>Diseño Gráfico</h6>
+                                    </div>
+                                    <div class="columnagrid" onclick="openTab('b2');" style="background:rgb(28, 184, 184);">
+                                        <h6>Diseño Industrial</h6>
+                                    </div>
+                                    <div class="columnagrid" onclick="openTab('b3');" style="background:rgb(8, 219, 219);">
+                                      <h6>Ux Design</h6>
+                                    </div>
+                                  </div>
+                                  
+<!-- COLUMNAS ABIERTAS -->
+                                  <div id="b1" class="containerTab" style="display:none;background:rgb(123, 153, 155)">
+                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                    <h5>Diseño Gráfico</h5>
+                                    <p>Concepto, desarrollo e implementación para marcas</p>
+                                  </div>
+                                  
+                                  <div id="b2" class="containerTab" style="display:none;background:rgb(95, 128, 131)">
+                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                    <h5>Diseño Industrial</h5>
+                                    <p>Diseño y ambientación de espacios tridimensionales para eventos, interiorismo y stands</p>
+                                  </div>
+                                  
+                                  <div id="b3" class="containerTab" style="display:none;background:rgb(123, 153, 155)">
+                                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                    <h5>Ux Design</h5>
+                                    <p>Con metodología de design thinking, investigación, concepto, desarrollo e implementación de productos digitales</p>
+                                  </div>
+                            </div>
+                            </ul>
+                    </div>
+                </div>
+
+    </section>
+
+<!-- SOBRE MI -->
+<div class="box">
+        <h5><i>Sobre mi</i></h5>
+        <ul >
+            <h6>Me encanta la pizza, bailar y pasar tiempo con mi novia y mi familia.</h6>
+            <h6>
+            <li>Nombre: José Luis Alvarado Negrete</li>
+            <li>34 años.</li>
+            <li>Ciudad: DF, México.</li>
+            <li>Correo: hyperparanoid@gmail.com</li>
+            <li>Tel: +52 1 55 7505 0135</li>
+            </h6>
+        </ul>
+    </div>
+
+<!-- CONTACTO -->
+    <section>
+
+                    <div class="col-xs-2">
+                        <div class="box">
+                                <h5><i> CONTACTO</i></h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 first-xs">
+                        <div class="box3">
+<!--  FORMULARIO DE CONTACTO -->  
+
+                                <div class="container">
+                                        <form action="action_page.php">
+                                                <label for="fname">
+                                                </label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+                                    
+                                        <label for="lname"></label>
+                                        <input type="text" id="lname" name="lastname" placeholder="Tu correo...">
+                                    
+                                        <label for="country">Me escribes desde...</label>
+                                        <select id="country" name="country">
+                                            <option value="australia">México</option>
+                                            <option value="canada">USA</option>
+                                            <option value="usa">EUROPA</option>
+                                        </select>
+                                    
+                                        <label for="subject">Sobre tu proyecto</label>
+                                        <textarea id="subject" name="subject" placeholder="Cuentame de que se trata" style="height:100px"></textarea>
+                                    
+                                        <input type="submit" value="Enviar">
+                                    
+                                        </form>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+    </section>
+</main>
+
+<section></section>
+
+
+
+<script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+        </script>
+
+<!-- JAVA SCRIPT -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
